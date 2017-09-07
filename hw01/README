@@ -6,6 +6,6 @@ HW01
 3.Gathered all the needed SD cards, cables, etc.
 4.Installed git on a host
 5.Signed up for the two beagle Google groups
-6.Wrote a simple Etch-a-sketch program
+6.Wrote a simple Etch-a-sketch program with ncurse in python
 
-For Etch-A-Sketch program, run gcc -o etchasketch etchasketch.c
+For Etch-A-Sketch program, run "python sketch.py"
