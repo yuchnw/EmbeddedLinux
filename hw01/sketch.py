@@ -1,5 +1,4 @@
-#!/usr/bin/python
-
+#!/usr/bin/env python3
 import curses
 print("Welcome to Etch-A-Sketch!")
 print("Here are the instructions:\n");
