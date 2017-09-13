@@ -4,14 +4,14 @@ import time
 import Adafruit_BBIO.GPIO as GPIO
 
 #Define LEDs and BTNs
-BTN1="GP0_6"
-BTN2="GP0_4"
+BTN4="GP0_6"
 BTN3="GP0_5"
-BTN4="GP0_3"
-LED1="GP1_3"
-LED2="GP1_4"
+BTN2="GP0_4"
+BTN1="GP0_3"
 LED3="RED"
 LED4="GREEN"
+LED2="GP1_4"
+LED1="GP1_3"
 
 #Assign GPIO to inputs and outputs
 GPIO.setup(LED1,GPIO.OUT)
@@ -40,9 +40,10 @@ GPIO.add_event_detect(BTN4,GPIO.BOTH,callback=updateLED)
 
 try:
     while True:
-        time.sleep(100)
+          time.sleep(100)
 except KeyboardInterrupt:
-    printf("Cleaning Up")
+    print("Cleaning Up")
     GPIO.cleanup()
 GPIO.cleanup()
+
 
