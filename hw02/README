@@ -1,2 +1,6 @@
 1. Finished LED Blink With Buttons (Demoed to Dr.Yoder)
 2. Finished etch-a-sketch program by buttons (Run python3 sketch.py)(Will demo to Dr.Yoder on Wednesday or Thursday)
+
+# Comments from Prof. Yoder
+# sketch.py gives an error when run under python3, run with python
+# Grade:  10/10
