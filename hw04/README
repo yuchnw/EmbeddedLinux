@@ -1,1 +1,4 @@
-1. Finished Etch-A-Sketch controlled by rotators.
+1. Finished Etch-A-Sketch controlled by rotators and demoed.
+2. Finished LED controlled by buttons using mmap() and demoed.
+3. Finished gpioThru
+4. Finished memorymap.
