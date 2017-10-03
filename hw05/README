@@ -1,0 +1,9 @@
+1.
+
+2. When an "LED" is clicked on in the browser, it will turn to green on both the browser and related spot of the matrix. 
+   If click again, both will turn off.
+   If the original color of the LED is red, it will change to orange when the LED is first clicked.
+
+3. background-color: green;
+
+4.
