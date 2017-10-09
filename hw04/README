@@ -2,3 +2,8 @@
 2. Finished LED controlled by buttons using mmap() and demoed.
 3. Finished gpioThru
 4. Finished memorymap.
+
+# Comments from Prof. Yoder
+# Found your memory map file
+# Please also include instructions on how to run your programs.
+# Grade:  9/10
