@@ -1,4 +1,7 @@
-1.
+1. Fisrt, boneServer.js will establish the I2C connection by setting up several data. 
+   Then it accesses to the LED paths in the bone and interacts.
+   Next, matrixLED.js is running. As connect() is called, matrix will read the 8-bit LED values one byte at a time and assign them to varialble.
+   Last, the matrixLED will update the matrix and the browser by the assigned data.
 
 2. When an "LED" is clicked on in the browser, it will turn to green on both the browser and related spot of the matrix. 
    If click again, both will turn off.
@@ -6,9 +9,19 @@
 
 3. background-color: green;
 
-4.
+4. First, the matrixLED.js will check whether disp[2*i] or disp[2*i+1] is clicked or not. 
+   Based on the algorithms set in the LEDclick() function, the browser will be updated corresponding to the current color.
+   In the matrix() function, the combination of green and red LED bit will generate different matrix colors.
+   Those changes will be toggled, transmitted to the bone and shown on the LED matrix.
+   The pattern of the color is GREEN -> RED -> YELLOW.
 
 # Comments from Prof. Yoder
 # Found your answers to the questions.  Some parts are missing.
 # Thanks for the demo.
 # Grade:  8/10
+
+----------------------------------------------------------------
+
+# Comments from Yuchen Wang
+# Sorry that I forgot to update my README again. I just realized and completed the questions.
+# Thanks.
