@@ -11,3 +11,6 @@ etch-a-sketch:	etch-a-sketch.c
 
 framebuffer:	framebuffer.c
 	$(CC) $(CFLAGS) $^ -o $@
+
+c:	c.c
+	$(CC) $(CFLAGS) $(LFLAGS) $^ -o $@
