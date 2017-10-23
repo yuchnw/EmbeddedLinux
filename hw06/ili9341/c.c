@@ -59,10 +59,10 @@ int main()
     printf("PLease enter the width of the line: /n");
     scanf("%s", &wid);
     int w=atol(wid);
-    if(w>50||w<1){
+    if(w>20||w<1){
        printf("Index Out Of Bound!");
     }
-    printf("w: %d\n", w);
+    //printf("w: %d\n", w);
 
     // Open the file for reading and writing
     fbfd = open("/dev/fb0", O_RDWR);
@@ -137,23 +137,23 @@ int main()
             location = (xold+vinfo.xoffset) * (vinfo.bits_per_pixel/8) + (yold+vinfo.yoffset) * finfo.line_length;
             printf("Updating location to %d, %d (%d)\n", x, y, location);
             unsigned short int t = r<<11 | g << 5 | b;
-            // *((unsigned short int*)(fbp + location)) = t;
+            *((unsigned short int*)(fbp + location)) = t;
             // Set old location to green
             for(int i=0;i<w;i++){
                 if(x!=xold){
                    l1 = (xold+vinfo.xoffset) * (vinfo.bits_per_pixel/8) + (yold+i+vinfo.yoffset) * finfo.line_length;
-                   printf("l1: %d\n", l1);
-                //   *((unsigned short int*)(fbp + l1)) = t;
+                   //printf("l1: %d\n", l1);
+                   *((unsigned short int*)(fbp + l1)) = t;
                 }
                 if(y!=yold){
                    l2 = (xold+vinfo.xoffset+i) * (vinfo.bits_per_pixel/8) + (yold+vinfo.yoffset) * finfo.line_length;
-                   printf("l2: %d\n", l2);
-                //   *((unsigned short int*)(fbp + l2)) = t;
+                   //printf("l2: %d\n", l2);
+                   *((unsigned short int*)(fbp + l2)) = t;
                 }
             }
         location = (x+vinfo.xoffset) * (vinfo.bits_per_pixel/8) + (y+vinfo.yoffset) * finfo.line_length;
-        printf("Updating location to %d, %d, %d\n", x, y, location);
-        // *((unsigned short int*)(fbp + location)) = 0xff;
+        //printf("Updating location to %d, %d, %d\n", x, y, location);
+        *((unsigned short int*)(fbp + location)) = 0xff;
         }
         rc_usleep(5000);
         }
