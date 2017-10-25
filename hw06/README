@@ -1,3 +1,9 @@
 Finished hw06 and demoed to Dr. Yoder.
 
 Run sudo ./on.sh first, then makefile and run sudo ./c
+
+// Comments from Prof. Yoder
+// You could use a more meaningful name than "c".
+// The other LCD exercises are documented
+// It works!
+// Grade:  8/10
