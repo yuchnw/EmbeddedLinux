@@ -7,6 +7,6 @@ Run as ./mmap
 This script is to implement the function mentioned above using mmap.
 
 gpio_test.c
-Run as ./gpio_test
+Go to exploringBB/extra/kernel/gpio_test/ and follow the instruction in the article.
 This script is to run the same program in kernel.
 Modified from http://derekmolloy.ie/kernel-gpio-programming-buttons-and-leds 
