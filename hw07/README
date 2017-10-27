@@ -1,1 +1,11 @@
-Created HW07
+interrupt.py
+Run as python3 interrupt.py
+This script is to detect button (GP1_3) pressed using interrupt and write value to LED (GP1_4)
+
+mmap.c
+Run as ./mmap
+This script is to implement the function mentioned above using mmap.
+
+gpio_test.c
+Run as ./gpio_test
+This script is to run the same program in kernel. Modified from the code from http://derekmolloy.ie/kernel-gpio-programming-buttons-and-leds
