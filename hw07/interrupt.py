@@ -12,7 +12,7 @@ GPIO.setup(LED, GPIO.OUT)
 map = {BTN: LED}
 
 def updateLED(channel):
-	print("channel = " + channel)
+#	print("channel = " + channel)
 	state = GPIO.input(channel)
 	GPIO.output(map[channel], state)
 #        print(map[channel] + " Toggled")
