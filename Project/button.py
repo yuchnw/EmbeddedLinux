@@ -24,7 +24,6 @@ def connect():
     raise
 
 connected = False
-flag=0
 
 while True:
      try:
@@ -34,11 +33,14 @@ while True:
            connected = True
         if connected:
            for event in device.read_loop():
+               client = Client(ACCOUNT_SID,AUTH_TOKEN)
            # 28 is the event code for Android button
                if event.code == 28 and event.value == 1:
-                  client = Client(ACCOUNT_SID,AUTH_TOKEN)
                   client.messages.create(to="+18128783295",from_="+18126457346",body="This is Yuchen! Emergency Situation! Need help!",)
-                  print("Emergency sent.")
+                  print("Emergency Text Sent.")
+               if event.code == 115 and event.value == 1:
+                  client.api.account.calls.create(to="+18128783295",from_="+18126457346",url="http://twimlets.com/holdmusic?Bucket=com.twilio.music.ambient")
+                  print("Emergency Call Sent.")
      except (OSError, IOError):
             # try connecting last time
             # if failed then exit the program
