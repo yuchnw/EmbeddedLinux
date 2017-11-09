@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Response>
   <Say voice="alice">This is an emergency call! Please help!</Say>
-  <Play>http://musicpleer.audio/#!9c0c25df3de4060a08aa971f45d77cf8</Play>
 </Response>
