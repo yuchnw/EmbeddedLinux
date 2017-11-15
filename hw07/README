@@ -10,3 +10,8 @@ gpio_test.c
 Go to exploringBB/extra/kernel/gpio_test/ and follow the instruction in the article.
 This script is to run the same program in kernel.
 Modified from http://derekmolloy.ie/kernel-gpio-programming-buttons-and-leds 
+
+// Comments from Prof. Yoder
+// Min, Max and average times  are missing
+// %CPU is missing
+// Grade:  7/10
