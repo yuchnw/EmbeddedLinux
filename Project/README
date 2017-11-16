@@ -1,5 +1,6 @@
 ECE497 Final Project -- DIY Emergency Button
 URL: https://elinux.org/ECE497_Project_-_DIY_Emergency_Button
+Youtube Demo: https://www.youtube.com/watch?v=i4mmO1QHRWA
 
 This project is to design and build a remote and portable pushbutton which could send out emergency text or call once it is pressed. 
 The main idea is to use Twilio API on the BeagleBone Blue to implement those functionalities.
